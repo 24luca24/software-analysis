@@ -20,6 +20,5 @@ After installing Dafny and its extension in VSCode, you can compile and verify a
 ```sh
 dafny build algorithmName.dfy
 ```
-
--- 
+ 
 ## Assignment 2: Project Analysis with Infer
