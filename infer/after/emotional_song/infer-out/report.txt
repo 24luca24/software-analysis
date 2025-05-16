@@ -1,0 +1,1123 @@
+#0
+src/main/java/emotionalnew/SchermataAvvio.java:35: warning: Parameter Not Nullable
+  `SchermataAvvio.setLocationRelativeTo(...)`: parameter #1(`arg1`) is declared non-nullable but the argument is `null`.
+  33.           setSize(500, 300); //imposta la dimensione della finestra
+  34.           setResizable(false); //non permette di ridimensionare la finestra
+  35. >         setLocationRelativeTo(null); //posiziona al centro della pagina la finestra all'avvio dell'app
+  36.           setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //permette la chiusura dell'applicazione alla pressione della X
+  37.           //passaggio del socket dal client -> istanzio il socket da passare poi nelle altre classi
+
+#1
+src/main/java/emotionalnew/AreaRiservata.java:37: warning: Parameter Not Nullable
+  `AreaRiservata.setLocationRelativeTo(...)`: parameter #1(`arg1`) is declared non-nullable but the argument is `null`.
+  35.           setSize(500, 250);
+  36.           setResizable(false);
+  37. >         setLocationRelativeTo(null);
+  38.           setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+  39.               this.userName = username;
+
+#2
+src/main/java/serverES/serverES.java:45: warning: Parameter Not Nullable
+  `serverES.setLocationRelativeTo(...)`: parameter #1(`arg1`) is declared non-nullable but the argument is `null`.
+  43.           setSize(300, 150);
+  44.           setResizable(false);
+  45. >         setLocationRelativeTo(null);
+  46.           setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  47.           JLabel titolo = new JLabel("Termina servizio"); //JLabel che crea il titolo nella finestra
+
+#3
+src/main/java/emotionalnew/Accesso.java:47: warning: Parameter Not Nullable
+  `Accesso.setLocationRelativeTo(...)`: parameter #1(`arg1`) is declared non-nullable but the argument is `null`.
+  45.           setSize(500, 250);
+  46.           setResizable(false);
+  47. >         setLocationRelativeTo(null);
+  48.           setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  49.   
+
+#4
+src/main/java/emotionalnew/Lista.java:48: warning: Parameter Not Nullable
+  `JFrame.setLocationRelativeTo(...)`: parameter #1(`arg1`) is declared non-nullable but the argument is `null`.
+  46.           frame = new JFrame("LISTA");
+  47.           frame.setSize(500, 250);
+  48. >         frame.setLocationRelativeTo(null);
+  49.           frame.setResizable(false);
+  50.           frame.setLayout(new BorderLayout());
+
+#5
+src/main/java/emotionalnew/Lista.java:61: warning: Parameter Not Nullable
+  `JScrollPane.setHorizontalScrollBar(...)`: parameter #1(`arg1`) is declared non-nullable but the argument is `null`.
+  59.   
+  60.           scrollPane = new JScrollPane(myList);
+  61. >         scrollPane.setHorizontalScrollBar(null);
+  62.           frame.add(scrollPane, BorderLayout.CENTER);
+  63.   
+
+#6
+src/main/java/emotionalnew/Lista.java:57: warning: Parameter Not Nullable
+  `Logger.log(...)`: parameter #2(`arg2`) is declared non-nullable but the argument is `null`.
+  55.               leggiCanzone();
+  56.           } catch (ClassNotFoundException ex) {
+  57. >             Logger.getLogger(Lista.class.getName()).log(Level.SEVERE, null, ex);
+  58.           }
+  59.   
+
+#7
+src/main/java/ClassiSerializzabili/Brano.java:49: warning: Field Not Initialized
+  Field `anno` is declared non-nullable, so it should be initialized in the constructor.
+  47.       * Costruttore vuoto della classe
+  48.       */
+  49. >     public Brano() {
+  50.           
+  51.       }
+
+#8
+src/main/java/ClassiSerializzabili/Brano.java:49: warning: Field Not Initialized
+  Field `autore` is declared non-nullable, so it should be initialized in the constructor.
+  47.       * Costruttore vuoto della classe
+  48.       */
+  49. >     public Brano() {
+  50.           
+  51.       }
+
+#9
+src/main/java/ClassiSerializzabili/Brano.java:49: warning: Field Not Initialized
+  Field `id` is declared non-nullable, so it should be initialized in the constructor.
+  47.       * Costruttore vuoto della classe
+  48.       */
+  49. >     public Brano() {
+  50.           
+  51.       }
+
+#10
+src/main/java/ClassiSerializzabili/Brano.java:49: warning: Field Not Initialized
+  Field `titolo` is declared non-nullable, so it should be initialized in the constructor.
+  47.       * Costruttore vuoto della classe
+  48.       */
+  49. >     public Brano() {
+  50.           
+  51.       }
+
+#11
+src/main/java/emotionalnew/CercaBranoMusicale.java:67: warning: Parameter Not Nullable
+  `CercaBranoMusicale.setLocationRelativeTo(...)`: parameter #1(`arg1`) is declared non-nullable but the argument is `null`.
+  65.           setSize(400, 300);
+  66.           setResizable(true);
+  67. >         setLocationRelativeTo(null);
+  68.           setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  69.               this.enabled = add;
+
+#12
+src/main/java/clientES/IpServer.java:67: warning: Parameter Not Nullable
+  `IpServer.setLocationRelativeTo(...)`: parameter #1(`arg1`) is declared non-nullable but the argument is `null`.
+  65.           setSize(500, 250); //imposta la dimensione della finestra
+  66.           setResizable(false); //non permette di ridimensionare la finestra
+  67. >         setLocationRelativeTo(null); //posiziona al centro della pagina la finestra all'avvio dell'app
+  68.           setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //permette la chiusura dell'applicazione alla pressione della X
+  69.   
+
+#13
+src/main/java/emotionalnew/ElencoPlaylist.java:67: warning: Field Not Initialized
+  Field `playlistSelezionata` is declared non-nullable, so it should be initialized in the constructor.
+  65.       */
+  66.       public ElencoPlaylist(String username) {
+  67. >         super("Risultati Ricerca");
+  68.           this.username = username;
+  69.           this.setSize(330, 260);
+
+#14
+src/main/java/emotionalnew/ElencoPlaylist.java:67: warning: Field Not Initialized
+  Field `risultati` is declared non-nullable, so it should be initialized in the constructor.
+  65.       */
+  66.       public ElencoPlaylist(String username) {
+  67. >         super("Risultati Ricerca");
+  68.           this.username = username;
+  69.           this.setSize(330, 260);
+
+#15
+src/main/java/emotionalnew/ElencoPlaylist.java:71: warning: Parameter Not Nullable
+  `ElencoPlaylist.setLocationRelativeTo(...)`: parameter #1(`arg1`) is declared non-nullable but the argument is `null`.
+  69.           this.setSize(330, 260);
+  70.           this.setResizable(false);
+  71. >         this.setLocationRelativeTo(null);
+  72.           this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  73.           cercaPlaylist();
+
+#16
+src/main/java/serverES/CredenzialiDB.java:69: warning: Field Not Initialized
+  Field `database` is declared non-nullable, so it should be initialized in the constructor.
+  67.        */
+  68.       public CredenzialiDB(){
+  69. >         super("LOGIN DATABASE"); //imposta il titolo della finestra
+  70.               setSize(500, 250); //imposta la dimensione della finestra
+  71.               setResizable(false); //non permette di ridimensionare la finestra
+
+#17
+src/main/java/serverES/CredenzialiDB.java:69: warning: Field Not Initialized
+  Field `db` is declared non-nullable, so it should be initialized in the constructor.
+  67.        */
+  68.       public CredenzialiDB(){
+  69. >         super("LOGIN DATABASE"); //imposta il titolo della finestra
+  70.               setSize(500, 250); //imposta la dimensione della finestra
+  71.               setResizable(false); //non permette di ridimensionare la finestra
+
+#18
+src/main/java/serverES/CredenzialiDB.java:72: warning: Parameter Not Nullable
+  `CredenzialiDB.setLocationRelativeTo(...)`: parameter #1(`arg1`) is declared non-nullable but the argument is `null`.
+  70.               setSize(500, 250); //imposta la dimensione della finestra
+  71.               setResizable(false); //non permette di ridimensionare la finestra
+  72. >             setLocationRelativeTo(null); //posiziona al centro della pagina la finestra all'avvio dell'app
+  73.               setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //permette la chiusura dell'applicazione alla pressione della X
+  74.               JLabel hostnameL = new JLabel("Hostname");
+
+#19
+src/main/java/emotionalnew/AreaRiservata.java:80: warning: Parameter Not Nullable
+  `Logger.log(...)`: parameter #2(`arg2`) is declared non-nullable but the argument is `null`.
+  78.               dispose();
+  79.           } catch (SQLException ex) {
+  80. >             Logger.getLogger(RegistraUtente.class.getName()).log(Level.SEVERE, null, ex);
+  81.           }
+  82.       }
+
+#20
+src/main/java/emotionalnew/VisualizzaPlaylist.java:75: warning: Field Not Initialized
+  Field `BranoSelezionato` is declared non-nullable, so it should be initialized in the constructor.
+  73.       */
+  74.       public VisualizzaPlaylist(Playlist p, String username) {
+  75. >         super(p.getNome());
+  76.           this.setSize(450, 260);
+  77.           this.setResizable(false);
+
+#21
+src/main/java/emotionalnew/VisualizzaPlaylist.java:75: warning: Field Not Initialized
+  Field `risultati` is declared non-nullable, so it should be initialized in the constructor.
+  73.       */
+  74.       public VisualizzaPlaylist(Playlist p, String username) {
+  75. >         super(p.getNome());
+  76.           this.setSize(450, 260);
+  77.           this.setResizable(false);
+
+#22
+src/main/java/emotionalnew/VisualizzaPlaylist.java:92: warning: Parameter Not Nullable
+  `JOptionPane.showMessageDialog(...)`: parameter #1(`arg0`) is declared non-nullable but the argument is `null`.
+  90.           }
+  91.           if(listaRicerca.size() == 0) {
+  92. >             JOptionPane.showMessageDialog(null, "Nessun Brano", "Info", JOptionPane.INFORMATION_MESSAGE);
+  93.   
+  94.               JLabel titoloL = new JLabel("Brani presenti: 0");
+
+#23
+src/main/java/emotionalnew/VisualizzaPlaylist.java:78: warning: Parameter Not Nullable
+  `VisualizzaPlaylist.setLocationRelativeTo(...)`: parameter #1(`arg1`) is declared non-nullable but the argument is `null`.
+  76.           this.setSize(450, 260);
+  77.           this.setResizable(false);
+  78. >         this.setLocationRelativeTo(null);
+  79.           this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  80.           this.username = username;
+
+#24
+src/main/java/comandi_db/Query.java:105: error: Null Dereference
+  object `result` last assigned on line 104 could be null and is dereferenced at line 105.
+  103.           boolean bol = false;
+  104.           ResultSet result = db.submitQuery("SELECT password from utenti WHERE username = '"+user+"'");
+  105. >         while(result.next()){
+  106.               s = result.getString("password");
+  107.               if(s.equals(password)){
+
+#25
+src/main/java/emotionalnew/Accesso.java:108: warning: Parameter Not Nullable
+  `Logger.log(...)`: parameter #2(`arg2`) is declared non-nullable but the argument is `null`.
+  106.               SchermataAvvio schermataAvvio = new SchermataAvvio();
+  107.           } catch (SQLException ex) {
+  108. >             Logger.getLogger(Accesso.class.getName()).log(Level.SEVERE, null, ex);
+  109.           }
+  110.       }
+
+#26
+src/main/java/emotionalnew/CercaBranoMusicale.java:124: warning: Parameter Not Nullable
+  `Logger.log(...)`: parameter #2(`arg2`) is declared non-nullable but the argument is `null`.
+  122.                   dispose();
+  123.               } catch (SQLException ex) {
+  124. >                 Logger.getLogger(CercaBranoMusicale.class.getName()).log(Level.SEVERE, null, ex);
+  125.               }
+  126.           } else if(!nomePlaylist.equals("") && !username.equals("")){
+
+#27
+src/main/java/clientES/IpServer.java:121: warning: Field Not Initialized
+  Field `client` is declared non-nullable, so it should be initialized in the constructor.
+  119.        * @param error Stringa contenente errore
+  120.        */
+  121. >     public IpServer(String error){
+  122.           JOptionPane.showMessageDialog(this, "IMPOSSIBILE CONNETTERSI AL SERVER", "Server Error", JOptionPane.ERROR_MESSAGE);
+  123.       }
+
+#28
+src/main/java/clientES/IpServer.java:121: warning: Field Not Initialized
+  Field `ipInviato` is declared non-nullable, so it should be initialized in the constructor.
+  119.        * @param error Stringa contenente errore
+  120.        */
+  121. >     public IpServer(String error){
+  122.           JOptionPane.showMessageDialog(this, "IMPOSSIBILE CONNETTERSI AL SERVER", "Server Error", JOptionPane.ERROR_MESSAGE);
+  123.       }
+
+#29
+src/main/java/clientES/IpServer.java:121: warning: Field Not Initialized
+  Field `ip` is declared non-nullable, so it should be initialized in the constructor.
+  119.        * @param error Stringa contenente errore
+  120.        */
+  121. >     public IpServer(String error){
+  122.           JOptionPane.showMessageDialog(this, "IMPOSSIBILE CONNETTERSI AL SERVER", "Server Error", JOptionPane.ERROR_MESSAGE);
+  123.       }
+
+#30
+src/main/java/emotionalnew/VisualizzaBranoMusicale.java:121: warning: Field Not Initialized
+  Field `braniPlaylist` is declared non-nullable, so it should be initialized in the constructor.
+  119.       */
+  120.       public VisualizzaBranoMusicale(String username, Brano b, Object r) {
+  121. >         super("Visualizza: "+ b.getTitolo());
+  122.           this.setSize(680, 580);
+  123.           this.setResizable(false);
+
+#31
+src/main/java/emotionalnew/VisualizzaBranoMusicale.java:121: warning: Field Not Initialized
+  Field `risultatiRicerca` is declared non-nullable, so it should be initialized in the constructor.
+  119.       */
+  120.       public VisualizzaBranoMusicale(String username, Brano b, Object r) {
+  121. >         super("Visualizza: "+ b.getTitolo());
+  122.           this.setSize(680, 580);
+  123.           this.setResizable(false);
+
+#32
+src/main/java/emotionalnew/VisualizzaBranoMusicale.java:124: warning: Parameter Not Nullable
+  `VisualizzaBranoMusicale.setLocationRelativeTo(...)`: parameter #1(`arg1`) is declared non-nullable but the argument is `null`.
+  122.           this.setSize(680, 580);
+  123.           this.setResizable(false);
+  124. >         this.setLocationRelativeTo(null);
+  125.           this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  126.           this.Canzone = b;
+
+#33
+src/main/java/comandi_db/Query.java:126: error: Null Dereference
+  object `result` last assigned on line 125 could be null and is dereferenced at line 126.
+  124.           int index = 0;
+  125.           ResultSet result = db.submitQuery("SELECT * from canzoni WHERE LOWER(titolo) LIKE LOWER('%"+titolo+"%')");
+  126. >         while(result.next()){
+  127.               Brano provvisorio = new Brano();
+  128.               provvisorio.setAnno(result.getString(1));
+
+#34
+src/main/java/emotionalnew/RegistraUtente.java:122: warning: Field Not Initialized
+  Field `client` is declared non-nullable, so it should be initialized in the constructor.
+  120.       */
+  121.       public RegistraUtente() {
+  122. >         super("REGISTRAZIONE");
+  123.           setSize(430, 500);
+  124.           setResizable(false);
+
+#35
+src/main/java/emotionalnew/RegistraUtente.java:122: warning: Field Not Initialized
+  Field `mailInserita` is declared non-nullable, so it should be initialized in the constructor.
+  120.       */
+  121.       public RegistraUtente() {
+  122. >         super("REGISTRAZIONE");
+  123.           setSize(430, 500);
+  124.           setResizable(false);
+
+#36
+src/main/java/emotionalnew/RegistraUtente.java:125: warning: Parameter Not Nullable
+  `RegistraUtente.setLocationRelativeTo(...)`: parameter #1(`arg1`) is declared non-nullable but the argument is `null`.
+  123.           setSize(430, 500);
+  124.           setResizable(false);
+  125. >         setLocationRelativeTo(null);
+  126.           setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  127.               JLabel registrazione = new JLabel("Registrazione");
+
+#37
+src/main/java/serverES/DataBase.java:125: warning: Return Not Nullable
+  `submitQuery(...)`: return type is declared non-nullable but the method returns a nullable value: null constant at line 129.
+  123.        * @throws SQLException cattura eccezione sql
+  124.        */
+  125. >     public ResultSet submitQuery(String sql) throws SQLException { //eseguo la query e se mi restituisce un risultato bene, altrimenti mi restituisce null
+  126.           if(statement.execute(sql)) {
+  127.               return statement.getResultSet();
+
+#38
+src/main/java/emotionalnew/RisultatiRicerca.java:126: warning: Field Not Initialized
+  Field `branoSelezionato` is declared non-nullable, so it should be initialized in the constructor.
+  124.       */
+  125.       public RisultatiRicerca(String filtro1, String filtro2, int tipoRicerca, String username, String nomePlaylist, String RisTitol, boolean add) {
+  126. >         super("Risultati Ricerca");
+  127.           this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  128.           this.username = username;
+
+#39
+src/main/java/emotionalnew/RisultatiRicerca.java:126: warning: Field Not Initialized
+  Field `risultati` is declared non-nullable, so it should be initialized in the constructor.
+  124.       */
+  125.       public RisultatiRicerca(String filtro1, String filtro2, int tipoRicerca, String username, String nomePlaylist, String RisTitol, boolean add) {
+  126. >         super("Risultati Ricerca");
+  127.           this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  128.           this.username = username;
+
+#40
+src/main/java/emotionalnew/RisultatiRicerca.java:153: warning: Parameter Not Nullable
+  `RisultatiRicerca.setLocationRelativeTo(...)`: parameter #1(`arg1`) is declared non-nullable but the argument is `null`.
+  151.               setSize(330, 260);
+  152.               setResizable(false);
+  153. >             setLocationRelativeTo(null);
+  154.               setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+  155.                   JLabel titoloL = new JLabel("Risultati Ricerca: " + this.listaRicerca.size());
+
+#41
+src/main/java/ClassiSerializzabili/DatiUtenti.java:128: warning: Field Not Initialized
+  Field `cFDato` is declared non-nullable, so it should be initialized in the constructor.
+  126.        * @param passwordInvio contiene password dell'utente
+  127.        */
+  128. >     public DatiUtenti(String usernameInvio, String passwordInvio) {
+  129.           this.usernameDato = usernameInvio;
+  130.           this.passwordDato = passwordInvio;
+
+#42
+src/main/java/ClassiSerializzabili/DatiUtenti.java:128: warning: Field Not Initialized
+  Field `cognomeDato` is declared non-nullable, so it should be initialized in the constructor.
+  126.        * @param passwordInvio contiene password dell'utente
+  127.        */
+  128. >     public DatiUtenti(String usernameInvio, String passwordInvio) {
+  129.           this.usernameDato = usernameInvio;
+  130.           this.passwordDato = passwordInvio;
+
+#43
+src/main/java/ClassiSerializzabili/DatiUtenti.java:128: warning: Field Not Initialized
+  Field `comuneDato` is declared non-nullable, so it should be initialized in the constructor.
+  126.        * @param passwordInvio contiene password dell'utente
+  127.        */
+  128. >     public DatiUtenti(String usernameInvio, String passwordInvio) {
+  129.           this.usernameDato = usernameInvio;
+  130.           this.passwordDato = passwordInvio;
+
+#44
+src/main/java/ClassiSerializzabili/DatiUtenti.java:128: warning: Field Not Initialized
+  Field `mailDato` is declared non-nullable, so it should be initialized in the constructor.
+  126.        * @param passwordInvio contiene password dell'utente
+  127.        */
+  128. >     public DatiUtenti(String usernameInvio, String passwordInvio) {
+  129.           this.usernameDato = usernameInvio;
+  130.           this.passwordDato = passwordInvio;
+
+#45
+src/main/java/ClassiSerializzabili/DatiUtenti.java:128: warning: Field Not Initialized
+  Field `nomeDato` is declared non-nullable, so it should be initialized in the constructor.
+  126.        * @param passwordInvio contiene password dell'utente
+  127.        */
+  128. >     public DatiUtenti(String usernameInvio, String passwordInvio) {
+  129.           this.usernameDato = usernameInvio;
+  130.           this.passwordDato = passwordInvio;
+
+#46
+src/main/java/ClassiSerializzabili/DatiUtenti.java:128: warning: Field Not Initialized
+  Field `provinciaDato` is declared non-nullable, so it should be initialized in the constructor.
+  126.        * @param passwordInvio contiene password dell'utente
+  127.        */
+  128. >     public DatiUtenti(String usernameInvio, String passwordInvio) {
+  129.           this.usernameDato = usernameInvio;
+  130.           this.passwordDato = passwordInvio;
+
+#47
+src/main/java/ClassiSerializzabili/DatiUtenti.java:128: warning: Field Not Initialized
+  Field `viaDato` is declared non-nullable, so it should be initialized in the constructor.
+  126.        * @param passwordInvio contiene password dell'utente
+  127.        */
+  128. >     public DatiUtenti(String usernameInvio, String passwordInvio) {
+  129.           this.usernameDato = usernameInvio;
+  130.           this.passwordDato = passwordInvio;
+
+#48
+src/main/java/clientES/clientES.java:128: warning: Field Not Initialized
+  Field `accesso` is declared non-nullable, so it should be initialized in the constructor.
+  126.        * far partire il Thread ClientES
+  127.        */
+  128. >     public clientES() {
+  129.           try {
+  130.               System.out.println("ipinviato22: "+ipServerConnect);
+
+#49
+src/main/java/clientES/clientES.java:128: warning: Field Not Initialized
+  Field `elencoPlaylist` is declared non-nullable, so it should be initialized in the constructor.
+  126.        * far partire il Thread ClientES
+  127.        */
+  128. >     public clientES() {
+  129.           try {
+  130.               System.out.println("ipinviato22: "+ipServerConnect);
+
+#50
+src/main/java/clientES/clientES.java:128: warning: Field Not Initialized
+  Field `p` is declared non-nullable, so it should be initialized in the constructor.
+  126.        * far partire il Thread ClientES
+  127.        */
+  128. >     public clientES() {
+  129.           try {
+  130.               System.out.println("ipinviato22: "+ipServerConnect);
+
+#51
+src/main/java/clientES/clientES.java:128: warning: Field Not Initialized
+  Field `registraUtente` is declared non-nullable, so it should be initialized in the constructor.
+  126.        * far partire il Thread ClientES
+  127.        */
+  128. >     public clientES() {
+  129.           try {
+  130.               System.out.println("ipinviato22: "+ipServerConnect);
+
+#52
+src/main/java/clientES/IpServer.java:139: warning: Parameter Not Nullable
+  `Logger.log(...)`: parameter #2(`arg2`) is declared non-nullable but the argument is `null`.
+  137.                   SchermataAvvio schermataAvvio = new SchermataAvvio();
+  138.               } catch (SQLException ex) {
+  139. >                 Logger.getLogger(Accesso.class.getName()).log(Level.SEVERE, null,ex);
+  140.               }
+  141.           }
+
+#53
+src/main/java/serverES/CredenzialiDB.java:150: warning: Parameter Not Nullable
+  `Logger.log(...)`: parameter #2(`arg2`) is declared non-nullable but the argument is `null`.
+  148.           } catch (SQLException ex) {
+  149.               System.err.println("errore db");
+  150. >             Logger.getLogger(serverES.class.getName()).log(Level.SEVERE, null, ex);
+  151.               JOptionPane.showMessageDialog(this, "Dati inseriti non corretti", "Errore Accesso", 2);
+  152.           }           
+
+#54
+src/main/java/ClassiSerializzabili/Giudizio.java:139: warning: Field Not Initialized
+  Field `commentoCalma` is declared non-nullable, so it should be initialized in the constructor.
+  137.       * Metodo Costruttore vuoto della classe <code>Giudizio</code>.
+  138.       */
+  139. >     public Giudizio(){
+  140.       }
+  141.   
+
+#55
+src/main/java/ClassiSerializzabili/Giudizio.java:139: warning: Field Not Initialized
+  Field `commentoGioia` is declared non-nullable, so it should be initialized in the constructor.
+  137.       * Metodo Costruttore vuoto della classe <code>Giudizio</code>.
+  138.       */
+  139. >     public Giudizio(){
+  140.       }
+  141.   
+
+#56
+src/main/java/ClassiSerializzabili/Giudizio.java:139: warning: Field Not Initialized
+  Field `commentoNostalgia` is declared non-nullable, so it should be initialized in the constructor.
+  137.       * Metodo Costruttore vuoto della classe <code>Giudizio</code>.
+  138.       */
+  139. >     public Giudizio(){
+  140.       }
+  141.   
+
+#57
+src/main/java/ClassiSerializzabili/Giudizio.java:139: warning: Field Not Initialized
+  Field `commentoPotenza` is declared non-nullable, so it should be initialized in the constructor.
+  137.       * Metodo Costruttore vuoto della classe <code>Giudizio</code>.
+  138.       */
+  139. >     public Giudizio(){
+  140.       }
+  141.   
+
+#58
+src/main/java/ClassiSerializzabili/Giudizio.java:139: warning: Field Not Initialized
+  Field `commentoSolennita` is declared non-nullable, so it should be initialized in the constructor.
+  137.       * Metodo Costruttore vuoto della classe <code>Giudizio</code>.
+  138.       */
+  139. >     public Giudizio(){
+  140.       }
+  141.   
+
+#59
+src/main/java/ClassiSerializzabili/Giudizio.java:139: warning: Field Not Initialized
+  Field `commentoStupore` is declared non-nullable, so it should be initialized in the constructor.
+  137.       * Metodo Costruttore vuoto della classe <code>Giudizio</code>.
+  138.       */
+  139. >     public Giudizio(){
+  140.       }
+  141.   
+
+#60
+src/main/java/ClassiSerializzabili/Giudizio.java:139: warning: Field Not Initialized
+  Field `commentoTenerezza` is declared non-nullable, so it should be initialized in the constructor.
+  137.       * Metodo Costruttore vuoto della classe <code>Giudizio</code>.
+  138.       */
+  139. >     public Giudizio(){
+  140.       }
+  141.   
+
+#61
+src/main/java/ClassiSerializzabili/Giudizio.java:139: warning: Field Not Initialized
+  Field `commentoTensione` is declared non-nullable, so it should be initialized in the constructor.
+  137.       * Metodo Costruttore vuoto della classe <code>Giudizio</code>.
+  138.       */
+  139. >     public Giudizio(){
+  140.       }
+  141.   
+
+#62
+src/main/java/ClassiSerializzabili/Giudizio.java:139: warning: Field Not Initialized
+  Field `commentoTristezza` is declared non-nullable, so it should be initialized in the constructor.
+  137.       * Metodo Costruttore vuoto della classe <code>Giudizio</code>.
+  138.       */
+  139. >     public Giudizio(){
+  140.       }
+  141.   
+
+#63
+src/main/java/ClassiSerializzabili/Giudizio.java:139: warning: Field Not Initialized
+  Field `username` is declared non-nullable, so it should be initialized in the constructor.
+  137.       * Metodo Costruttore vuoto della classe <code>Giudizio</code>.
+  138.       */
+  139. >     public Giudizio(){
+  140.       }
+  141.   
+
+#64
+src/main/java/comandi_db/Query.java:152: error: Null Dereference
+  object `result` last assigned on line 151 could be null and is dereferenced at line 152.
+  150.           DataBase data2=db;
+  151.           ResultSet result = db.submitQuery("SELECT idcanzone from canzoniplaylist WHERE idplaylist = '"+idPlaylist+"'");
+  152. >         while(result.next()){
+  153.               idcanz.add(index,result.getString(1));
+  154.               index++;
+
+#65
+src/main/java/clientES/clientES.java:149: warning: Field Not Initialized
+  Field `accesso` is declared non-nullable, so it should be initialized in the constructor.
+  147.        * @param ipServer definisce l'ip di connessione al server
+  148.        */
+  149. >     public clientES(String ipServer) {
+  150.           this.ipServerConnect=ipServer;
+  151.           System.out.println("ipinviato: "+ipServerConnect);
+
+#66
+src/main/java/clientES/clientES.java:149: warning: Field Not Initialized
+  Field `elencoPlaylist` is declared non-nullable, so it should be initialized in the constructor.
+  147.        * @param ipServer definisce l'ip di connessione al server
+  148.        */
+  149. >     public clientES(String ipServer) {
+  150.           this.ipServerConnect=ipServer;
+  151.           System.out.println("ipinviato: "+ipServerConnect);
+
+#67
+src/main/java/clientES/clientES.java:149: warning: Field Not Initialized
+  Field `in` is declared non-nullable, so it should be initialized in the constructor.
+  147.        * @param ipServer definisce l'ip di connessione al server
+  148.        */
+  149. >     public clientES(String ipServer) {
+  150.           this.ipServerConnect=ipServer;
+  151.           System.out.println("ipinviato: "+ipServerConnect);
+
+#68
+src/main/java/clientES/clientES.java:149: warning: Field Not Initialized
+  Field `out` is declared non-nullable, so it should be initialized in the constructor.
+  147.        * @param ipServer definisce l'ip di connessione al server
+  148.        */
+  149. >     public clientES(String ipServer) {
+  150.           this.ipServerConnect=ipServer;
+  151.           System.out.println("ipinviato: "+ipServerConnect);
+
+#69
+src/main/java/clientES/clientES.java:149: warning: Field Not Initialized
+  Field `p` is declared non-nullable, so it should be initialized in the constructor.
+  147.        * @param ipServer definisce l'ip di connessione al server
+  148.        */
+  149. >     public clientES(String ipServer) {
+  150.           this.ipServerConnect=ipServer;
+  151.           System.out.println("ipinviato: "+ipServerConnect);
+
+#70
+src/main/java/clientES/clientES.java:149: warning: Field Not Initialized
+  Field `registraUtente` is declared non-nullable, so it should be initialized in the constructor.
+  147.        * @param ipServer definisce l'ip di connessione al server
+  148.        */
+  149. >     public clientES(String ipServer) {
+  150.           this.ipServerConnect=ipServer;
+  151.           System.out.println("ipinviato: "+ipServerConnect);
+
+#71
+src/main/java/clientES/clientES.java:149: warning: Field Not Initialized
+  Field `socketClient` is declared non-nullable, so it should be initialized in the constructor.
+  147.        * @param ipServer definisce l'ip di connessione al server
+  148.        */
+  149. >     public clientES(String ipServer) {
+  150.           this.ipServerConnect=ipServer;
+  151.           System.out.println("ipinviato: "+ipServerConnect);
+
+#72
+src/main/java/emotionalnew/GiudicaBrano.java:149: warning: Field Not Initialized
+  Field `braniPlaylist` is declared non-nullable, so it should be initialized in the constructor.
+  147.       */
+  148.       public GiudicaBrano(String username,Object r, Brano b, Playlist pl) {
+  149. >         super("Giudica: " + b.getTitolo());
+  150.           this.pack();
+  151.           this.setSize(1150, 620);
+
+#73
+src/main/java/emotionalnew/GiudicaBrano.java:149: warning: Field Not Initialized
+  Field `risultatiRicerca` is declared non-nullable, so it should be initialized in the constructor.
+  147.       */
+  148.       public GiudicaBrano(String username,Object r, Brano b, Playlist pl) {
+  149. >         super("Giudica: " + b.getTitolo());
+  150.           this.pack();
+  151.           this.setSize(1150, 620);
+
+#74
+src/main/java/emotionalnew/GiudicaBrano.java:99: warning: Field Not Nullable
+  `logoFull` is declared non-nullable but is assigned a nullable: call to Class.getResource(...) at line 99 (nullable according to nullsafe internal models).
+   97.       * <br>Dichiarato <strong>private</strong> cos&igrave; da essere visto solo dalla classe attuale
+   98.       */
+   99. >     private  java.net.URL logoFull = getClass().getResource("/icons/starFull.png");
+  100.       
+  101.       /**
+
+#75
+src/main/java/emotionalnew/GiudicaBrano.java:111: warning: Field Not Nullable
+  `logoUnfilled` is declared non-nullable but is assigned a nullable: call to Class.getResource(...) at line 111 (nullable according to nullsafe internal models).
+  109.        * <br>Dichiarato <strong>private</strong> cos&igrave; da essere visto solo dalla classe attuale
+  110.        */
+  111. >     private  java.net.URL logoUnfilled = getClass().getResource("/icons/starUnfilled.png");
+  112.   
+  113.       /**
+
+#76
+src/main/java/emotionalnew/GiudicaBrano.java:153: warning: Parameter Not Nullable
+  `GiudicaBrano.setLocationRelativeTo(...)`: parameter #1(`arg1`) is declared non-nullable but the argument is `null`.
+  151.           this.setSize(1150, 620);
+  152.           this.setResizable(false);
+  153. >         this.setLocationRelativeTo(null);
+  154.           this.setVisible(true);
+  155.           this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+#77
+src/main/java/emotionalnew/GiudicaBrano.java:105: warning: Parameter Not Nullable
+  `ImageIcon(...)`: parameter #1(`arg1`) is declared non-nullable but the argument `GiudicaBrano.logoFull` is nullable: call to Class.getResource(...) at line 99 (nullable according to nullsafe internal models).
+  103.       * <br>Dichiarato <strong>private</strong> cos&igrave; da essere visto solo dalla classe attuale
+  104.       */
+  105. >     private Icon stellaFull = new ImageIcon(logoFull);
+  106.   
+  107.       /**
+
+#78
+src/main/java/emotionalnew/GiudicaBrano.java:117: warning: Parameter Not Nullable
+  `ImageIcon(...)`: parameter #1(`arg1`) is declared non-nullable but the argument `GiudicaBrano.logoUnfilled` is nullable: call to Class.getResource(...) at line 111 (nullable according to nullsafe internal models).
+  115.       * <br>Dichiarato <strong>private</strong> cos&igrave; da essere visto solo dalla classe attuale
+  116.       */
+  117. >     private Icon stellaUnfilled = new ImageIcon(logoUnfilled);
+  118.       
+  119.       /**
+
+#79
+src/main/java/serverES/ServerSlave.java:156: warning: Field Not Initialized
+  Field `Canzone` is declared non-nullable, so it should be initialized in the constructor.
+  154.        * nel contesto di una comunicazione client-server.
+  155.        */
+  156. >     public ServerSlave(Socket s, CredenzialiDB dt) throws IOException {
+  157.           socket = s;
+  158.           out = new ObjectOutputStream(socket.getOutputStream());
+
+#80
+src/main/java/serverES/ServerSlave.java:156: warning: Field Not Initialized
+  Field `filtro1` is declared non-nullable, so it should be initialized in the constructor.
+  154.        * nel contesto di una comunicazione client-server.
+  155.        */
+  156. >     public ServerSlave(Socket s, CredenzialiDB dt) throws IOException {
+  157.           socket = s;
+  158.           out = new ObjectOutputStream(socket.getOutputStream());
+
+#81
+src/main/java/serverES/ServerSlave.java:156: warning: Field Not Initialized
+  Field `filtro2` is declared non-nullable, so it should be initialized in the constructor.
+  154.        * nel contesto di una comunicazione client-server.
+  155.        */
+  156. >     public ServerSlave(Socket s, CredenzialiDB dt) throws IOException {
+  157.           socket = s;
+  158.           out = new ObjectOutputStream(socket.getOutputStream());
+
+#82
+src/main/java/serverES/ServerSlave.java:156: warning: Field Not Initialized
+  Field `idSelezionato` is declared non-nullable, so it should be initialized in the constructor.
+  154.        * nel contesto di una comunicazione client-server.
+  155.        */
+  156. >     public ServerSlave(Socket s, CredenzialiDB dt) throws IOException {
+  157.           socket = s;
+  158.           out = new ObjectOutputStream(socket.getOutputStream());
+
+#83
+src/main/java/serverES/ServerSlave.java:156: warning: Field Not Initialized
+  Field `id` is declared non-nullable, so it should be initialized in the constructor.
+  154.        * nel contesto di una comunicazione client-server.
+  155.        */
+  156. >     public ServerSlave(Socket s, CredenzialiDB dt) throws IOException {
+  157.           socket = s;
+  158.           out = new ObjectOutputStream(socket.getOutputStream());
+
+#84
+src/main/java/serverES/ServerSlave.java:156: warning: Field Not Initialized
+  Field `idemozione` is declared non-nullable, so it should be initialized in the constructor.
+  154.        * nel contesto di una comunicazione client-server.
+  155.        */
+  156. >     public ServerSlave(Socket s, CredenzialiDB dt) throws IOException {
+  157.           socket = s;
+  158.           out = new ObjectOutputStream(socket.getOutputStream());
+
+#85
+src/main/java/serverES/ServerSlave.java:156: warning: Field Not Initialized
+  Field `name` is declared non-nullable, so it should be initialized in the constructor.
+  154.        * nel contesto di una comunicazione client-server.
+  155.        */
+  156. >     public ServerSlave(Socket s, CredenzialiDB dt) throws IOException {
+  157.           socket = s;
+  158.           out = new ObjectOutputStream(socket.getOutputStream());
+
+#86
+src/main/java/serverES/ServerSlave.java:156: warning: Field Not Initialized
+  Field `nomePl` is declared non-nullable, so it should be initialized in the constructor.
+  154.        * nel contesto di una comunicazione client-server.
+  155.        */
+  156. >     public ServerSlave(Socket s, CredenzialiDB dt) throws IOException {
+  157.           socket = s;
+  158.           out = new ObjectOutputStream(socket.getOutputStream());
+
+#87
+src/main/java/serverES/ServerSlave.java:156: warning: Field Not Initialized
+  Field `p` is declared non-nullable, so it should be initialized in the constructor.
+  154.        * nel contesto di una comunicazione client-server.
+  155.        */
+  156. >     public ServerSlave(Socket s, CredenzialiDB dt) throws IOException {
+  157.           socket = s;
+  158.           out = new ObjectOutputStream(socket.getOutputStream());
+
+#88
+src/main/java/serverES/ServerSlave.java:156: warning: Field Not Initialized
+  Field `ricevimentoDati` is declared non-nullable, so it should be initialized in the constructor.
+  154.        * nel contesto di una comunicazione client-server.
+  155.        */
+  156. >     public ServerSlave(Socket s, CredenzialiDB dt) throws IOException {
+  157.           socket = s;
+  158.           out = new ObjectOutputStream(socket.getOutputStream());
+
+#89
+src/main/java/serverES/ServerSlave.java:156: warning: Field Not Initialized
+  Field `stringa` is declared non-nullable, so it should be initialized in the constructor.
+  154.        * nel contesto di una comunicazione client-server.
+  155.        */
+  156. >     public ServerSlave(Socket s, CredenzialiDB dt) throws IOException {
+  157.           socket = s;
+  158.           out = new ObjectOutputStream(socket.getOutputStream());
+
+#90
+src/main/java/serverES/ServerSlave.java:156: warning: Field Not Initialized
+  Field `username` is declared non-nullable, so it should be initialized in the constructor.
+  154.        * nel contesto di una comunicazione client-server.
+  155.        */
+  156. >     public ServerSlave(Socket s, CredenzialiDB dt) throws IOException {
+  157.           socket = s;
+  158.           out = new ObjectOutputStream(socket.getOutputStream());
+
+#91
+src/main/java/clientES/clientES.java:166: warning: Field Not Initialized
+  Field `accesso` is declared non-nullable, so it should be initialized in the constructor.
+  164.        * @param tipo contiene un valore intero, che corrisponde all'opzione da eseguire
+  165.        */
+  166. >     public clientES(int tipo) {
+  167.           if(tipo == 0){
+  168.               this.ipServerConnect="localhost";
+
+#92
+src/main/java/clientES/clientES.java:166: warning: Field Not Initialized
+  Field `elencoPlaylist` is declared non-nullable, so it should be initialized in the constructor.
+  164.        * @param tipo contiene un valore intero, che corrisponde all'opzione da eseguire
+  165.        */
+  166. >     public clientES(int tipo) {
+  167.           if(tipo == 0){
+  168.               this.ipServerConnect="localhost";
+
+#93
+src/main/java/clientES/clientES.java:166: warning: Field Not Initialized
+  Field `in` is declared non-nullable, so it should be initialized in the constructor.
+  164.        * @param tipo contiene un valore intero, che corrisponde all'opzione da eseguire
+  165.        */
+  166. >     public clientES(int tipo) {
+  167.           if(tipo == 0){
+  168.               this.ipServerConnect="localhost";
+
+#94
+src/main/java/clientES/clientES.java:166: warning: Field Not Initialized
+  Field `out` is declared non-nullable, so it should be initialized in the constructor.
+  164.        * @param tipo contiene un valore intero, che corrisponde all'opzione da eseguire
+  165.        */
+  166. >     public clientES(int tipo) {
+  167.           if(tipo == 0){
+  168.               this.ipServerConnect="localhost";
+
+#95
+src/main/java/clientES/clientES.java:166: warning: Field Not Initialized
+  Field `p` is declared non-nullable, so it should be initialized in the constructor.
+  164.        * @param tipo contiene un valore intero, che corrisponde all'opzione da eseguire
+  165.        */
+  166. >     public clientES(int tipo) {
+  167.           if(tipo == 0){
+  168.               this.ipServerConnect="localhost";
+
+#96
+src/main/java/clientES/clientES.java:166: warning: Field Not Initialized
+  Field `registraUtente` is declared non-nullable, so it should be initialized in the constructor.
+  164.        * @param tipo contiene un valore intero, che corrisponde all'opzione da eseguire
+  165.        */
+  166. >     public clientES(int tipo) {
+  167.           if(tipo == 0){
+  168.               this.ipServerConnect="localhost";
+
+#97
+src/main/java/clientES/clientES.java:166: warning: Field Not Initialized
+  Field `socketClient` is declared non-nullable, so it should be initialized in the constructor.
+  164.        * @param tipo contiene un valore intero, che corrisponde all'opzione da eseguire
+  165.        */
+  166. >     public clientES(int tipo) {
+  167.           if(tipo == 0){
+  168.               this.ipServerConnect="localhost";
+
+#98
+src/main/java/comandi_db/Query.java:182: error: Null Dereference
+  object `result` last assigned on line 181 could be null and is dereferenced at line 182.
+  180.           int index=0;
+  181.           ResultSet result = db.submitQuery("SELECT * from canzoni WHERE LOWER(autore) LIKE LOWER('%"+autore+"%') AND anno = "+anno+"");
+  182. >         while(result.next()){
+  183.               Brano provvisorio = new Brano();
+  184.               provvisorio.setAnno(result.getString(1));
+
+#99
+src/main/java/comandi_db/Query.java:205: error: Null Dereference
+  object `result` last assigned on line 203 could be null and is dereferenced at line 205.
+  203.           ResultSet result = db.submitQuery("SELECT * from canzoni WHERE idCanzone = '"+idCanzone+"'");
+  204.           Brano provvisorio = new Brano();
+  205. >         while(result.next()){
+  206.               provvisorio.setAnno(result.getString(1));
+  207.               provvisorio.setId(result.getString(2));
+
+#100
+src/main/java/comandi_db/Query.java:248: error: Null Dereference
+  object `result2` last assigned on line 245 could be null and is dereferenced at line 248.
+  246.                       "SELECT idCanzone FROM canzoniPlaylist WHERE idPlaylist = '" + s + "'"
+  247.               );
+  248. >             while (result2.next()) {
+  249.                   provv += result2.getString(1) + "$";
+  250.               }
+
+#101
+src/main/java/comandi_db/Query.java:240: error: Null Dereference
+  object `result3` last assigned on line 237 could be null and is dereferenced at line 240.
+  238.                       "SELECT idPlaylist FROM Playlist WHERE nomePlaylist = '" + p.getNome() + "'"
+  239.               );
+  240. >             while (result3.next()) {
+  241.                   s = result3.getString(1);
+  242.               }
+
+#102
+src/main/java/comandi_db/Query.java:230: error: Null Dereference
+  object `result` last assigned on line 229 could be null and is dereferenced at line 230.
+  228.           Query qz = new Query();
+  229.           ResultSet result = db.submitQuery("SELECT * from Playlist WHERE username = '" + username + "'");
+  230. >         while (result.next()) {
+  231.               Playlist provvisoria = new Playlist("", result.getString(1), result.getString(2));
+  232.               listaRicercaPl.add(index, provvisoria);
+
+#103
+src/main/java/emotionalnew/RisultatiRicerca.java:259: warning: Parameter Not Nullable
+  `JOptionPane.showOptionDialog(...)`: parameter #1(`arg0`) is declared non-nullable but the argument is `null`.
+  257.               int cambioTitolo=0;
+  258.               if(selezionaUnAltro){
+  259. >                 conferma = JOptionPane.showOptionDialog(null,"Vuoi aggiungere un altro brano?","seleziona Brano",
+  260.                           JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE,null,options,options[0]);
+  261.                   if(conferma==0){
+
+#104
+src/main/java/emotionalnew/RisultatiRicerca.java:264: warning: Parameter Not Nullable
+  `JOptionPane.showOptionDialog(...)`: parameter #1(`arg0`) is declared non-nullable but the argument is `null`.
+  262.                       if(risultatiTitoli.equals("")) risultatiTitoli=risultatiTitoli+this.risultati.getSelectedValue().getId();
+  263.                       else risultatiTitoli=risultatiTitoli+ "$" + this.risultati.getSelectedValue().getId();
+  264. >                     cambioTitolo = JOptionPane.showOptionDialog(null,"Vuoi utilizzare lo stesso parametro di ricerca?","seleziona Brano",
+  265.                               JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE,null,options2,options2[0]);
+  266.                       if(cambioTitolo==0){
+
+#105
+src/main/java/emotionalnew/RisultatiRicerca.java:259: warning: Parameter Not Nullable
+  `JOptionPane.showOptionDialog(...)`: parameter #6(`arg5`) is declared non-nullable but the argument is `null`.
+  257.               int cambioTitolo=0;
+  258.               if(selezionaUnAltro){
+  259. >                 conferma = JOptionPane.showOptionDialog(null,"Vuoi aggiungere un altro brano?","seleziona Brano",
+  260.                           JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE,null,options,options[0]);
+  261.                   if(conferma==0){
+
+#106
+src/main/java/emotionalnew/RisultatiRicerca.java:264: warning: Parameter Not Nullable
+  `JOptionPane.showOptionDialog(...)`: parameter #6(`arg5`) is declared non-nullable but the argument is `null`.
+  262.                       if(risultatiTitoli.equals("")) risultatiTitoli=risultatiTitoli+this.risultati.getSelectedValue().getId();
+  263.                       else risultatiTitoli=risultatiTitoli+ "$" + this.risultati.getSelectedValue().getId();
+  264. >                     cambioTitolo = JOptionPane.showOptionDialog(null,"Vuoi utilizzare lo stesso parametro di ricerca?","seleziona Brano",
+  265.                               JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE,null,options2,options2[0]);
+  266.                       if(cambioTitolo==0){
+
+#107
+src/main/java/emotionalnew/RisultatiRicerca.java:278: warning: Parameter Not Nullable
+  `Logger.log(...)`: parameter #2(`arg2`) is declared non-nullable but the argument is `null`.
+  276.                           RegistraPlaylist(risultatiTitoli);
+  277.                       } catch (IOException ex) {
+  278. >                         Logger.getLogger(RisultatiRicerca.class.getName()).log(Level.SEVERE, null, ex);
+  279.                       }
+  280.                   }
+
+#108
+src/main/java/comandi_db/Query.java:275: error: Null Dereference
+  object `result` last assigned on line 274 could be null and is dereferenced at line 275.
+  273.               String s = "";
+  274.               ResultSet result = db.submitQuery("SELECT idPlaylist from Playlist WHERE nomePlaylist = '" + nomePlaylist + "' AND username = '" + username + "'");
+  275. >             while (result.next()) {
+  276.                   s = (result.getString(1));
+  277.               }
+
+#109
+src/main/java/comandi_db/Query.java:293: error: Null Dereference
+  object `result` last assigned on line 292 could be null and is dereferenced at line 293.
+  291.               boolean bol = false;
+  292.               ResultSet result = db.submitQuery("SELECT nomeplaylist FROM Playlist WHERE username = '" + username + "'");
+  293. >             while (result.next()) {
+  294.                   s = result.getString("nomeplaylist");
+  295.                   if (s.equals(nomePl)) {
+
+#110
+src/main/java/emotionalnew/RegistraUtente.java:321: warning: Parameter Not Nullable
+  `Logger.log(...)`: parameter #2(`arg2`) is declared non-nullable but the argument is `null`.
+  319.               dispose();
+  320.           } catch (SQLException ex) {
+  321. >             Logger.getLogger(RegistraUtente.class.getName()).log(Level.SEVERE, null, ex);
+  322.           }
+  323.       }
+
+#111
+src/main/java/comandi_db/Query.java:337: error: Null Dereference
+  object `result` last assigned on line 336 could be null and is dereferenced at line 337.
+  335.               int i = 0;
+  336.               ResultSet result = db.submitQuery("SELECT * from canzoni");
+  337. >             while (result.next()) {
+  338.                   Brano provvisorio = new Brano();
+  339.                   provvisorio.setAnno(result.getString(1));
+
+#112
+src/main/java/comandi_db/Query.java:359: error: Null Dereference
+  object `result` last assigned on line 358 could be null and is dereferenced at line 359.
+  357.               String idcanzone = "";
+  358.               ResultSet result = db.submitQuery("SELECT idCanzone from emozioni WHERE idCanzone = '" + id + "'");
+  359. >             while (result.next()) {
+  360.                   idcanzone = (result.getString(1));
+  361.               }
+
+#113
+src/main/java/comandi_db/Query.java:377: error: Null Dereference
+  object `result` last assigned on line 376 could be null and is dereferenced at line 377.
+  375.               String username = "";
+  376.               ResultSet result = db.submitQuery("SELECT idUtente from emozioni WHERE idUtente = '" + user + "' AND idCanzone= '" + id + "'");
+  377. >             while (result.next()) {
+  378.                   username = (result.getString(1));
+  379.               }
+
+#114
+src/main/java/comandi_db/Query.java:397: error: Null Dereference
+  object `result` last assigned on line 396 could be null and is dereferenced at line 397.
+  395.               int i = 0;
+  396.               ResultSet result = db.submitQuery("SELECT idUtente from emozioni WHERE idCanzone = '" + id + "'");
+  397. >             while (result.next()) {
+  398.                   username[i] = (result.getString(1));
+  399.                   i++;
+
+#115
+src/main/java/comandi_db/Query.java:415: error: Null Dereference
+  object `resset` last assigned on line 414 could be null and is dereferenced at line 415.
+  413.               int n = 0;
+  414.               ResultSet resset = db.submitQuery("SELECT COUNT(idUtente) AS total FROM emozioni WHERE idCanzone = '" + id + "'");
+  415. >             while (resset.next()) {
+  416.                   n = resset.getInt("total");
+  417.               }
+
+#116
+src/main/java/comandi_db/Query.java:432: error: Null Dereference
+  object `result` last assigned on line 431 could be null and is dereferenced at line 432.
+  430.               String valutazione = "";
+  431.               ResultSet result = db.submitQuery("SELECT emozione" + emozione + " from emozioni WHERE idemozione=" + idemozione);
+  432. >             while (result.next()) {
+  433.                   valutazione = (result.getString(1));
+  434.               }
+
+#117
+src/main/java/comandi_db/Query.java:449: error: Null Dereference
+  object `result` last assigned on line 448 could be null and is dereferenced at line 449.
+  447.               String valutazione = "";
+  448.               ResultSet result = db.submitQuery("SELECT valutazione" + emozione + " from emozioni WHERE idemozione=" + idemozione);
+  449. >             while (result.next()) {
+  450.                   valutazione = (result.getString(1));
+  451.               }
+
+#118
+src/main/java/comandi_db/Query.java:513: error: Null Dereference
+  object `result` last assigned on line 512 could be null and is dereferenced at line 513.
+  511.               String idselezionato = "";
+  512.               ResultSet result = db.submitQuery("SELECT idemozione FROM emozioni where idUtente= '" + username + "' AND idCanzone= '" + id + "'");
+  513. >             while (result.next()) {
+  514.                   idselezionato = (result.getString(1));
+  515.               }
+
+#119
+src/main/java/comandi_db/Query.java:531: error: Null Dereference
+  object `resset` last assigned on line 530 could be null and is dereferenced at line 531.
+  529.               }
+  530.               ResultSet resset = db.submitQuery("SELECT COUNT(anno) AS total FROM canzoni");
+  531. >             while (resset.next()) {
+  532.                   n = resset.getInt("total");
+  533.               }
+
+#120
+src/main/java/emotionalnew/GiudicaBrano.java:596: warning: Parameter Not Nullable
+  `JOptionPane.showOptionDialog(...)`: parameter #1(`arg0`) is declared non-nullable but the argument is `null`.
+  594.           if(duplicato==true){
+  595.               Object[] options = {"Sovrascrivi","Annulla"};
+  596. >             conferma = JOptionPane.showOptionDialog(null,"Vuoi sovrascrivere il tuo precedente commento?","Aggiunta commento per "+ titolo,
+  597.               JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE,null,options,options[0]);
+  598.               esiste=true;
+
+#121
+src/main/java/emotionalnew/GiudicaBrano.java:596: warning: Parameter Not Nullable
+  `JOptionPane.showOptionDialog(...)`: parameter #6(`arg5`) is declared non-nullable but the argument is `null`.
+  594.           if(duplicato==true){
+  595.               Object[] options = {"Sovrascrivi","Annulla"};
+  596. >             conferma = JOptionPane.showOptionDialog(null,"Vuoi sovrascrivere il tuo precedente commento?","Aggiunta commento per "+ titolo,
+  597.               JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE,null,options,options[0]);
+  598.               esiste=true;
+
+#122
+src/main/java/clientES/clientES.java:605: warning: Parameter Not Nullable
+  `Logger.log(...)`: parameter #2(`arg2`) is declared non-nullable but the argument is `null`.
+  603.                   IpServer ip=new IpServer(1);
+  604.               } catch (SQLException ex) {
+  605. >                 Logger.getLogger(clientES.class.getName()).log(Level.SEVERE, null, ex);
+  606.               }
+  607.           }
+
+#123
+src/main/java/serverES/ServerSlave.java:857: warning: Parameter Not Nullable
+  `Logger.log(...)`: parameter #2(`arg2`) is declared non-nullable but the argument is `null`.
+  855.                   
+  856.           } catch (SQLException ex) {
+  857. >             Logger.getLogger(GiudicaBrano.class.getName()).log(Level.SEVERE, null, ex);
+  858.           }
+  859.       }
+
+Found 124 issues
+                                Issue Type(ISSUED_TYPE_ID): #
+    Field Not Initialized(ERADICATE_FIELD_NOT_INITIALIZED): 68
+  Parameter Not Nullable(ERADICATE_PARAMETER_NOT_NULLABLE): 34
+                        Null Dereference(NULL_DEREFERENCE): 19
+          Field Not Nullable(ERADICATE_FIELD_NOT_NULLABLE): 2
+        Return Not Nullable(ERADICATE_RETURN_NOT_NULLABLE): 1

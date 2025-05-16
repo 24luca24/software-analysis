@@ -1,0 +1,195 @@
+[124][      debug] Loading models took 30.7ms
+[124][environment] CWD = /workspace
+[124][environment] No .inferconfig file found
+[124][environment] Project root = /workspace
+[124][environment] INFER_ARGS =   @/tmp/args.tmp.c8f434
+[124][environment] command line arguments:   infer --eradicate --keep-going --jobs 1 -- mvn
+[124][environment]                           clean compile
+[124][environment] Available memory at startup: 7071 MB
+[124][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), eradicate (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[124][environment] Scheduler: file
+[124][environment] Cores used: 1
+[124][environment] Infer version v1.1.0
+[124][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[124][environment] 
+[124][   progress] Capturing in maven mode...
+[124][      debug] Running maven capture:
+[124][      debug] mvn 'clean' 'compile' '-P' 'infer-capture'
+
+[163][environment] CWD = /workspace
+[163][environment] No .inferconfig file found
+[163][environment] Project root = /workspace
+[163][environment] INFER_ARGS =   @/tmp/args.tmp.61ba42
+[163][environment] command line arguments:   /tools/infer/lib/infer/infer/bin/infer
+[163][environment]                           @/tmp/org.codehaus.plexus.compiler.javac.JavacCompiler12327597525196439224arguments
+[163][environment] Available memory at startup: 6712 MB
+[163][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), eradicate (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[163][      debug] Current working directory: '/workspace'
+[163][      debug] Trying to execute: javac '-J-Duser.language=en' '@/tmp/org.codehaus.plexus.compiler.javac.JavacCompiler12327597525196439224arguments' '@/workspace/infer-out/tmp/javac_args.tmp.4847dc' 2>'/workspace/infer-out/tmp/javac.tmp.360722.out'
+[163][      debug] *** Success. Logs:
+[163][      debug] Translating 25 source files (29 classes)
+[163][      debug] done capturing all files
+[163][      debug] GC stats for capture:
+[163][      debug]   minor_words: 3.05454e+07
+[163][      debug]   promoted_words: 2.24051e+06
+[163][      debug]   major_words: 2.75314e+06
+[163][      debug]   minor_collections: 63
+[163][      debug]   major_collections: 4
+[163][      debug]   compactions: 0
+[163][      debug]   top_heap_words: 2680320
+[163][      debug]   
+[163][      debug] GC stats for main_process_full:
+[163][      debug]   minor_words: 3.19293e+07
+[163][      debug]   promoted_words: 2.40612e+06
+[163][      debug]   major_words: 2.9394e+06
+[163][      debug]   minor_collections: 67
+[163][      debug]   major_collections: 6
+[163][      debug]   compactions: 1
+[163][      debug]   top_heap_words: 2680320
+[163][      debug]   
+[163][environment] Scheduler: file
+[163][environment] Cores used: 1
+[163][environment] [124][      debug] GC stats for capture:
+[124][      debug]   minor_words: 13631
+[124][      debug]   promoted_words: 0
+[124][      debug]   major_words: 0
+[124][      debug]   minor_collections: 0
+[124][      debug]   major_collections: 0
+[124][      debug]   compactions: 0
+[124][      debug]   top_heap_words: 760832
+[124][      debug]   
+[124][   progress] Found 25 source files to analyze in /workspace/infer-out
+[124][   progress] src/main/java/ClassiSerializzabili/Brano.java starting
+[124][   progress] src/main/java/ClassiSerializzabili/Brano.java DONE
+[124][   progress] src/main/java/ClassiSerializzabili/DatiUtenti.java starting
+[124][ intern err] java_class_info should be present for Java classesjava_class_info should be present for Java classes
+[124][   progress] src/main/java/ClassiSerializzabili/DatiUtenti.java DONE
+[124][   progress] src/main/java/ClassiSerializzabili/Giudizio.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/ClassiSerializzabili/Giudizio.java DONE
+[124][   progress] src/main/java/ClassiSerializzabili/ListOfBrani.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/ClassiSerializzabili/ListOfBrani.java DONE
+[124][   progress] src/main/java/ClassiSerializzabili/Playlist.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/ClassiSerializzabili/Playlist.java DONE
+[124][   progress] src/main/java/clientES/IpServer.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/clientES/IpServer.java DONE
+[124][   progress] src/main/java/clientES/clientES.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/clientES/clientES.java DONE
+[124][   progress] src/main/java/comandi_db/Query.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/comandi_db/Query.java DONE
+[124][   progress] src/main/java/comandi_db/Tabelle.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/comandi_db/Tabelle.java DONE
+[124][   progress] src/main/java/emotionalnew/Accesso.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/emotionalnew/Accesso.java DONE
+[124][   progress] src/main/java/emotionalnew/AreaRiservata.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/emotionalnew/AreaRiservata.java DONE
+[124][   progress] src/main/java/emotionalnew/CercaBranoMusicale.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/emotionalnew/CercaBranoMusicale.java DONE
+[124][   progress] src/main/java/emotionalnew/ElencoPlaylist.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/emotionalnew/ElencoPlaylist.java DONE
+[124][   progress] src/main/java/emotionalnew/GiudicaBrano.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/emotionalnew/GiudicaBrano.java DONE
+[124][   progress] src/main/java/emotionalnew/Lista.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/emotionalnew/Lista.java DONE
+[124][   progress] src/main/java/emotionalnew/MainDB.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/emotionalnew/MainDB.java DONE
+[124][   progress] src/main/java/emotionalnew/RegistraUtente.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/emotionalnew/RegistraUtente.java DONE
+[124][   progress] src/main/java/emotionalnew/RisultatiRicerca.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/emotionalnew/RisultatiRicerca.java DONE
+[124][   progress] src/main/java/emotionalnew/SchermataAvvio.java starting
+[124][   progress] src/main/java/emotionalnew/SchermataAvvio.java DONE
+[124][   progress] src/main/java/emotionalnew/VisualizzaBranoMusicale.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/emotionalnew/VisualizzaBranoMusicale.java DONE
+[124][   progress] src/main/java/emotionalnew/VisualizzaPlaylist.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/emotionalnew/VisualizzaPlaylist.java DONE
+[124][   progress] src/main/java/serverES/CredenzialiDB.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/serverES/CredenzialiDB.java DONE
+[124][   progress] src/main/java/serverES/DataBase.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/serverES/DataBase.java DONE
+[124][   progress] src/main/java/serverES/ServerSlave.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/serverES/ServerSlave.java DONE
+[124][   progress] src/main/java/serverES/serverES.java starting
+[124][ intern err] java_class_info should be present for Java classes
+[124][   progress] src/main/java/serverES/serverES.java DONE
+[124][      debug] Backend stats:
+[124][      debug]   summary_file_try_load= 14237
+[124][      debug]   summary_read_from_disk= 269
+[124][      debug]   summary_cache_hits= 11480 (44%)
+[124][      debug]   summary_cache_misses= 14237
+[124][      debug]   ondemand_procs_analyzed= 433
+[124][      debug]   ondemand_local_cache_hits= 12128 (93%)
+[124][      debug]   ondemand_local_cache_misses= 902
+[124][      debug]   proc_locker_lock_time_user= 0.00000000
+[124][      debug]   proc_locker_lock_time_sys= 0.00000000
+[124][      debug]   proc_locker_lock_time_wall= 0.00000000
+[124][      debug]   proc_locker_unlock_time_user= 0.00000000
+[124][      debug]   proc_locker_unlock_time_sys= 0.00000000
+[124][      debug]   proc_locker_unlock_time_wall= 0.00000000
+[124][      debug]   restart_scheduler_useful_time_user= 0.00000000
+[124][      debug]   restart_scheduler_useful_time_sys= 0.00000000
+[124][      debug]   restart_scheduler_useful_time_wall= 0.00000000
+[124][      debug]   restart_scheduler_total_time_user= 0.00000000
+[124][      debug]   restart_scheduler_total_time_sys= 0.00000000
+[124][      debug]   restart_scheduler_total_time_wall= 0.00000000
+[124][      debug]   
+[124][      debug] GC stats for backend_stats.:
+[124][      debug]   minor_words: 1.27193e+10
+[124][      debug]   promoted_words: 9.4173e+07
+[124][      debug]   major_words: 1.03992e+08
+[124][      debug]   minor_collections: 12180
+[124][      debug]   major_collections: 114
+[124][      debug]   compactions: 0
+[124][      debug]   top_heap_words: 6201856
+[124][      debug]   
+[124][      debug] Analysis phase finished in 21.021s
+[124][      debug] backend_stats.scheduler_process_analysis_time_user= 20.74126200
+[124][      debug] backend_stats.scheduler_process_analysis_time_sys= 0.13438700
+[124][      debug] backend_stats.scheduler_process_analysis_time_wall= 21.02068934
+[124][      debug] GC stats for analysis_scheduler:
+[124][      debug]   minor_words: 1.27194e+10
+[124][      debug]   promoted_words: 9.4173e+07
+[124][      debug]   major_words: 1.03993e+08
+[124][      debug]   minor_collections: 12180
+[124][      debug]   major_collections: 114
+[124][      debug]   compactions: 0
+[124][      debug]   top_heap_words: 6201856
+[124][      debug]   
+[124][      debug] GC stats for report:
+[124][      debug]   minor_words: 1.17518e+06
+[124][      debug]   promoted_words: 39120
+[124][      debug]   major_words: 107924
+[124][      debug]   minor_collections: 2
+[124][      debug]   major_collections: 0
+[124][      debug]   compactions: 0
+[124][      debug]   top_heap_words: 6201856
+[124][      debug]   
+[124][      debug] GC stats for main_process_full:
+[124][      debug]   minor_words: 1.27222e+10
+[124][      debug]   promoted_words: 9.43778e+07
+[124][      debug]   major_words: 1.04792e+08
+[124][      debug]   minor_collections: 12186
+[124][      debug]   major_collections: 116
+[124][      debug]   compactions: 1
+[124][      debug]   top_heap_words: 6201856
+[124][      debug]   
