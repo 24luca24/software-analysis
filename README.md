@@ -22,3 +22,9 @@ dafny build algorithmName.dfy
 ```
  
 ## Assignment 2: Project Analysis with Infer
+
+Infer is a static analysis tool developed by Facebook that automatically detects bugs in code before it runs. It can find issues such as null pointer exceptions, resource leaks, and concurrency errors, helping improve software quality by identifying potential problems early.
+
+In the `infer` folder, you will find two subfolders: **before** and **after**. The **before** folder contains the original project code, while the **after** folder contains the same project but improved by fixing the issues that Infer identified. This demonstrates how static analysis can guide bug fixing and enhance code reliability.
+
+To see more about how I execute the project, and what the project is about, go in the folder and you will found a report explain everything I did.
