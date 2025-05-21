@@ -4,6 +4,15 @@ As a student of the Software Analysis course, I would like to share what we have
 
 In this course, we will complete three assignments, each focusing on different software analysis techniques.
 
+## 📌 Assignments Overview
+
+| Assignment | Technology | Focus |
+|-----------|------------|-------|
+| ✅ **Assignment 1** | ![Dafny](https://img.shields.io/badge/Dafny-Formal%20Verification-blue) | Algorithm Verification |
+| 🔧 **Assignment 2** | ![Infer](https://img.shields.io/badge/Infer-Static%20Analyzer-lightgrey?logo=facebook) | Project Bug Detection |
+| 🔄 **Assignment 3** | ![Spin](https://img.shields.io/badge/Spin-Model%20Checker-brightgreen) | Concurrency Model Checking |
+
+
 ## Assignment 1: Algorithm Analysis with Dafny
 
 Dafny is a formal static verification tool that allows you to write and verify programs with mathematical guarantees. It supports specifications such as preconditions, postconditions, and loop invariants.  
