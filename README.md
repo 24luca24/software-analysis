@@ -43,7 +43,7 @@ To see more about how I execute the project, and what the project is about, go i
 
 ## Assignment 3: Model checking with Spin ![Dafny](https://img.shields.io/badge/Dafny-Formal%20Verification-blue)
 
-Spin is a widely used open-source software model checker designed for verifying the correctness of distributed software models. It uses the Promela (Process Meta Language) modeling language to describe system behaviors and allows formal verification of properties such as safety and liveness expressed in Linear Temporal Logic (LTL).\
+Spin is a widely used open-source software model checker designed for verifying the correctness of distributed software models. It uses the Promela (Process Meta Language) modeling language to describe system behaviors and allows formal verification of properties such as safety and liveness expressed in Linear Temporal Logic (LTL).
 
 ### 🧠 What I Did:
 The goal of this assignment was to build a Promela model simulating multiple worker threads completing tasks either in ordered or random sequences. Then, I defined and verified several LTL properties using Spin to check correctness, including eventual completion of all tasks and consistency conditions. Counterexamples produced by Spin helped analyze potential violations and improve understanding of concurrent behaviors.
