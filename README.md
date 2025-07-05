@@ -47,6 +47,7 @@ Spin is a widely used open-source software model checker designed for verifying 
 
 ### 🧠 What I Did:
 The goal of this assignment was to build a Promela model simulating multiple worker threads completing tasks either in ordered or random sequences. Then, I defined and verified several LTL properties using Spin to check correctness, including eventual completion of all tasks and consistency conditions. Counterexamples produced by Spin helped analyze potential violations and improve understanding of concurrent behaviors.
+(More information about the assignment are in the "Spin" folder, there you can find also my report where I explain what I did in details)
 
 ### ▶️ How to Run:
 After installing Promela extention on VSCode, you can run the script.sh, inside the Spin folder, which contain instruction used to run the program and verify the properties.
